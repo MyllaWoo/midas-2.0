@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midas Locações - Orçamento</title>
+    <link rel= "stylesheet" href="style.css" />
+    <link rel="icon" href="imagens/logonew-midas.jpg">
+    <style>
+        .box {
+            margin: auto;
+            width: 600px;
+            background-image: linear-gradient(to right, rgb(200, 179, 202), rgb(113, 44, 141));
+            padding: 20px;
+            border: 2px;
+            border-bottom: 2px solid whitesmoke;
+            border-radius: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            top: 50%;
+            left: 50%;
+            
+        }
+    </style>
+     
+    </head>
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo">
+                <img src="imagens/midas.logo.white.300px.jpg" alt="Logo da Midas Locações e Serviços">
+            </div>
+            <button id="toggle-theme">Tema</button>
+            <h1>Midas Locações e Serviços</h1><br>
+            <span class="links">
+               <a href="home.html">Home</a>
+               <a href="produto.html">Produto</a>
+               <a href="orcamento.html">Orçamento</a>
+            </span>
+            
+
+        </header>
+
+        <!-- Orçamento -->
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend><b>Orçamento do Cliente</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" nome="nome" id="nome" class="inputUser" required>
+                        <label for="nome">Nome completo</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" nome="email" id="email" class="inputUser" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" nome="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    <br>
+                    <br>
+                    <p><strong>Que serviços você deseja:</strong><br />
+                        <label>Manutenção
+                           <input name="manutencao" type="radio"
+                           value="manutancao" checked = "checked" id="manutencao" required/>
+                        </label>
+                       <label for="instalacao">Instalação
+                           <input name = "instalacao" type="radio"
+                           value = "instalacao" id="instalacao" required />
+                           </label>
+                           <label for="padronizacao">Padronização
+                               <input name = "padronizacao" type="radio"
+                               value = "padronizacao" id="padronizacao" required />
+                               </label>
+                       <label for="vitoria">Vistoria
+                           <input name = "vistoria" type="radio"
+                           value="vistoria" id="vistoria" required/>
+                       </label>
+                       </p>
+                       <br>
+                       <br>
+
+                       <div class="inputBox">
+                        <label for="inicio_projeto"><b>Inicio do Projeto</b></label>
+                        <input type="date" nome="inicio_projeto" id="inicio_projeto" class="inputUser" required>
+                        
+                       </div>
+                       <br>
+                       <br>
+                       <div class="inputBox">
+                        <input type="text" nome="cidade" id="cidade" class="imputUser" required>
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" nome="estado" id="estado" class="imputUser" required>
+                        <label for="estado">Estado</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" nome="trecho" id="trecho" class="imputUser" required>
+                        <label for="trecho">Trecho</label>
+                    </div>
+                    <br>
+                    <br>
+                    <p><label><b>Observação:</b>Observação:<br />
+                        <textarea name = "comments"
+                        rows = "4" cols = "36">deixe sua observação.</textarea>
+                    </label></p>
+                    <br>
+                    <br>
+                    <p><strong>Tipo de pagamento:</strong><br />
+                        <label for="dinheiro">Dinheiro
+                           <input name="dinheiro" type="radio"
+                           value="dinheiro" checked = "checked" id="dinheiro" required/>
+                        </label>
+                       <label for="cartao">Cartão
+                           <input name = "cartao" type="radio"
+                           value = "cartao" id="cartao" required />
+                           </label>
+                           <label for="pix">Pix
+                               <input name = "pix" type="radio"
+                               value = "pix" id="pix" required />
+                               </label>
+                       <label for="boleto">Boleto
+                           <input name = "boleto" type="radio"
+                           value="boleto" id="boleto" required/>
+                       </label>
+                       </p>
+                       
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar"/>
+                    <input type="reset"  value="Limpar"/>
+                    
+
+                </fieldset>
+            </form>
+
+        </div>
+      
+
+        <!-- Rodapé -->
+        <footer>
+
+            <span class="bold">Midas Locações</span>
+            &copy; 2024 <br><br>
+            <div class="footer-content">
+                <div class="footer-section about">
+                  <h3>Sobre Nós</h3>
+                  <p>
+                    Somos uma empresa dedicada a oferecer os melhores produtos e serviços.
+                  </p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contato</h3>
+                    <p>Email: midaslocacoes@hotmail.com</p>
+                    <p>Telefone: (81) 98396-2640</p>
+                </div>
+            </div>
+            
+            
+            
+            
+
+
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+
+
+</html>
